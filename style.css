@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+.main{
+    
+    width: 100%;
+    /* background-color: beige; */
+    background-image:url("aakash-dhage-25B-A2dgOVo-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 67, 46);
+    flex-wrap: wrap-reverse;
+}
+
+/* main right */
+.r-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.r-nav i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.r-nav h4{
+    color: aqua;
+    font-size: 20px;
+}
+.r-nav h4:hover{
+    color: rgb(179, 179, 29);
+}
+
+.nav h1{
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+    font-family: cursive;
+}
+.nav h1:hover{
+    color: rgb(179, 179, 29);
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    
+}
+h1:hover::after{
+    animation-name: lineanimi;
+    animation-duration: 2s;
+}
+
+@keyframes lineanimi {
+    
+    0%{
+         width: 0;
+         left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+     color: black;
+width: 60%;
+/* height: 400px; */
+background-color: yellow;
+padding: 3vw 5vw;
+}
+.left p{
+  padding: 2vw 1vw;
+}
+.left button{
+    padding: .5vw 1vw;
+    background-color: rgb(20, 86, 64);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+
+}
+.left button:hover{
+    background-color: rgb(12, 113, 79);
+}
+.left h1{
+    padding: .5vw;
+    text-decoration: underline;
+}
+
+.left h4{
+    position: relative;
+    top: 15px;
+   font-size: 25px;
+   padding: .5vw 1vw;
+}
+.left h4:hover{
+    text-decoration: underline;
+}
+.right
+{
+width: 40%;
+/* height: 400px; */
+background-color: palevioletred;
+}
+.right img{
+width: 500px;
+display: block;
+margin: auto;
+position: relative;
+top: 40px;
+}
+
+@media (max-width:600px) {
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav h1{        
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .r-nav h4{
+        display: none;
+
+    }
+   .content{
+    color: antiquewhite;
+    display: block;
+    flex-direction: column;
+   }
+   .left{
+    width: 100%;
+   }
+   .left h1{
+     text-align: center;
+   }
+   .left p{
+    text-align: center;
+    padding: 5vw;
+   }
+  .left button{
+    display: block;
+    margin: auto;
+    padding: 3vw 3vw;
+  }
+  .left h4{
+    left: 30px;
+  }
+
+   .right{
+    width: 100%;
+    height: 500px;
+   }
+   .right img{
+    width:300px;
+    /* display: block; */
+    margin: auto;
+   }
+     
+}
+
